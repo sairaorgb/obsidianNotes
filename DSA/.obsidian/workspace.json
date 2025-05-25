@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "0aaa3cac1357740b",
+    "type": "split",
+    "children": [
+      {
+        "id": "31a42ecc50ff76b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cacc578602008740",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programiz/C++ Syntax/Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Functions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d17d66018f52d1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5d72ac9bcba6351",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "880f46f33518468e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "804acac4f8d23747",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f58e11cddfc51253",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "51298bb53247f620",
+    "type": "split",
+    "children": [
+      {
+        "id": "76a4078d5ae76c41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e64071a83fb78af",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DSA.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for DSA"
+            }
+          },
+          {
+            "id": "0991b51a73e63db5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DSA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DSA"
+            }
+          },
+          {
+            "id": "342136d98a2cbb62",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "530fc313bb5bf6eb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DSA.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DSA"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cacc578602008740",
+  "lastOpenFiles": [
+    "Programiz/C++ Syntax/Fundamentals.md",
+    "Programiz/C++ Syntax/Functions.md",
+    "Programiz/C++ Syntax/Flow Control.md",
+    "DSA.md",
+    "Programiz/Basic Syntax.md",
+    "Images/Pasted image 20250520142024.png",
+    "Images",
+    "Global",
+    "Programiz/Data Structures/DSA Introduction.md",
+    "Images/Pasted image 20250523133203.png",
+    "Images/Pasted image 20250523133153.png",
+    "Images/Pasted image 20250523123241.png",
+    "Images/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf",
+    "Untitled 1.md",
+    "Untitled.md",
+    "STL.md",
+    "Sorting.md",
+    "Sets.md",
+    "Programiz.md",
+    "Pasted image 20250520142749.png",
+    "C++ Syntax/Basic Syntax.md",
+    "C++ Syntax/miscellaneous.md",
+    "C++ Syntax",
+    "2025-03-25.md",
+    "Programiz",
+    "tumblr_ce237ad7762fc6bce812f5f47f499d76_7acfce39_1280.webp",
+    "image.webp"
+  ]
+}
