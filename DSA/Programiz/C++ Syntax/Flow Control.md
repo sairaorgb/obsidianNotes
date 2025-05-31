@@ -66,5 +66,5 @@ switch (expression)  {
 condition ? expression1 : expression2;
 ```
  
-  Ternary operator can also be nested but care need to be taken.
+  Ternary operator can also be nested but care is need to be taken.
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programiz/C++ Syntax/Functions.md",
+                "file": "Programiz/C++ Syntax/OOPs Paradigm in CPP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Functions"
+              "title": "OOPs Paradigm in CPP"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "51298bb53247f620",
@@ -165,10 +166,17 @@
   },
   "active": "cacc578602008740",
   "lastOpenFiles": [
+    "Programiz/C++ Syntax/Structures and Enumerations.md",
+    "Programiz/C++ Syntax/OOPs Paradigm in CPP.md",
     "Programiz/C++ Syntax/Fundamentals.md",
-    "Programiz/C++ Syntax/Functions.md",
     "Programiz/C++ Syntax/Flow Control.md",
+    "Programiz/C++ Syntax/Functions.md",
+    "Programiz/C++ Syntax/Arrays and Strings.md",
+    "Programiz/C++ Syntax/Pointers and References.md",
+    "Images/Pasted image 20250528105927.png",
+    "Programiz/C++ Syntax/C++ STL.md",
     "DSA.md",
+    "Images/Pasted image 20250526130154.png",
     "Programiz/Basic Syntax.md",
     "Images/Pasted image 20250520142024.png",
     "Images",
