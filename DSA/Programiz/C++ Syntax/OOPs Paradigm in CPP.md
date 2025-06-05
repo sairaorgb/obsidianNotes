@@ -110,5 +110,5 @@ Wall wall2 = wall1;
 
 **C++ Default Copy Constructor**
 
-- If we have not defined a copy constructor. The compiler used the default copy constructor to copy the contents of one object of the Wall class to another ( the above will be done without a constr but the order will be default) .
+- If we have not defined a copy constructor. The compiler use the default copy constructor to copy the contents of one object of the Wall class to another ( the above will be done without a constr but the order will be default) .
 

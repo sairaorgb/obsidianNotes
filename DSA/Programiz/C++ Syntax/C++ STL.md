@@ -41,6 +41,7 @@ A container is an object that stores a collection of objects of a specific type.
 - Navigating through also requires manual work cause iterators dont work.
 
 #### C++ STL Iterators
+
 Iterators are objects that are used to access elements of a container.
 ``` c++
 vector<int>::iterator it;
@@ -61,7 +62,7 @@ In C++, we can use the Standard Template Library to implement some of the common
 
 - Array declaration
 ``` c++
-#include <array
+#include <array>
 // T is the type and N is num of entites
 std::array<T, N> array_name;
 ```
@@ -100,3 +101,63 @@ std::array<int, 5> a = {1, 2, 3, 4, 5};
 // Correct: std::array supports assignment
 std::array<int, 5> b = a;
 ```
+
+###### C++ STL Vectors
+
+- In C++ ,vectors are used to store elements of similar data types. However, unlike arrays, the size of a vector can grow dynamically.
+-  We can also use the insert() and emplace() functions to add elements to a vector.
+
+``` c++
+std::vector<T> vector_name;
+
+//Intialization
+
+vector<int> vector1 = {1, 2, 3, 4, 5};   // Initializer list
+vector<int> vector2 {1, 2, 3, 4, 5};     // Uniform initialization
+vector<int> vector3(5, 12);          // first arg is size and second arg is value
+
+// Adding elements to vector
+num.push_back(6);
+
+// Accessing elements of a vector
+num.at(index);   // checks for bounds
+num[index];       // doesnt check for bounds
+
+// deleting elements
+num.pop_back();
+
+// iterators
+vector<int>::iterator itr;
+itr = num.begin();
+
+```
+- other functions include size , clear , front , back ,empty and capacity
+- traversal can be done through incrementing iterators.  
+
+###### C++ STL Lists
+
+- In C++, the STL list implements the doubly-linked list data structure. 
+``` c++
+std::list<Type> list_name = {value1, value2, ...};
+
+// initialization
+list<int> numbers = {1, 2, 3, 4, 5};
+
+// adding elements
+numbers.push_front();
+numbers.push_back();
+
+// accessing elements
+numbers.front();
+numbers.back();
+
+// deleting elements
+numbers.pop_front();
+numbers.pop_back();
+
+```
+- other functions include reverse , sort , unique (removes consecutive duplicate elements), empty , size , clear and merge.
+- Elements do not have consecutive addresses from their prev elements . so during traversal , incrementing of iterator only makes sense and adding integer to iterator does not work as it does like vectors.
+
+ **C++ Forward List**
+ 
