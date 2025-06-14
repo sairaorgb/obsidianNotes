@@ -79,22 +79,14 @@ Through a constant reference , just the reference is passed as argument which'll
 	A pointer to a const is a pointer variable that points to a constant variable. These pointers
 	- allow us to change the address the pointer is pointing to,
 	- don't allow us to change the value stored in those constant variables.
-	``` c++
-	
-    const int TOTAL_MONTHS = 12;
-    const int *MONTHS_PTR = &TOTAL_MONTHS;
+``` c++
+const int TOTAL_MONTHS = 12;
+const int *MONTHS_PTR = &TOTAL_MONTHS;
   
-    cout << "TOTAL_MONTHS: " << TOTAL_MONTHS << endl;
-    cout << "*MONTHS_PTR: " << *MONTHS_PTR << endl;
-
-    const int HALF_MONTHS = 6;
-    MONTHS_PTR = &HALF_MONTHS;
-    cout << endl;
-  
-    cout << "HALF_MONTHS: " << HALF_MONTHS << endl;
-    cout << "*MONTHS_PTR: " << *MONTHS_PTR;
+const int HALF_MONTHS = 6;
+MONTHS_PTR = &HALF_MONTHS;
+cout << endl;
 ```
-
 	We'll get an error if we try to modify the value at MONTHS_PTR.
 	
 - **Const Pointer**

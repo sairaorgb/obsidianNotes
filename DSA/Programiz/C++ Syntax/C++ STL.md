@@ -55,6 +55,12 @@ In C++, we can use the Standard Template Library to implement some of the common
 - Copying algorithms
 - Counting algorithms
 
+#### Extrra Stuff
+
+- Containers usually occupy more space than their size * data type size , this is to include the metadata which is an overhead containing stuff. 
+-  For Sequential containers , an iterator can be added with an integer to get a valid element of that container . wherease in other containers , this does not work cause elements dont occupt consecutive locations and the iterator needs to be incremented with ++ to get next location. 
+- Unlike vectors or other containers, we cannot use a ranged for loop to iterate through a stack. This is because the STL stack is an STL Container Adapter, which provides restrictive access to make it behave like a standard stack data structure.
+
 
 ###### C++ STL Array
 
@@ -115,6 +121,7 @@ std::vector<T> vector_name;
 vector<int> vector1 = {1, 2, 3, 4, 5};   // Initializer list
 vector<int> vector2 {1, 2, 3, 4, 5};     // Uniform initialization
 vector<int> vector3(5, 12);          // first arg is size and second arg is value
+vector<int> vector(3);               // 3 size with element 0
 
 // Adding elements to vector
 num.push_back(6);
@@ -131,8 +138,8 @@ vector<int>::iterator itr;
 itr = num.begin();
 
 ```
-- other functions include size , clear , front , back ,empty and capacity
-- traversal can be done through incrementing iterators.  
+- other functions include size , clear , front , back ,empty and capacity 
+- adding element usually takes O(1) time, in worst case it is O(n) and rewrites entire thing to new available space.
 
 ###### C++ STL Lists
 
@@ -160,4 +167,74 @@ numbers.pop_back();
 - Elements do not have consecutive addresses from their prev elements . so during traversal , incrementing of iterator only makes sense and adding integer to iterator does not work as it does like vectors.
 
  **C++ Forward List**
+ - It is implemented with linked list and it only allows elements to be added or removed at the front.
  
+ **C++ Queue**
+ 
+- The queue data structure follows the FIFO (First In First Out) principle where elements that are added first will be removed first.
+
+Methods	   Description
+
+push()	       Inserts an element at the back of the queue.
+pop()	       Removes an element from the front of the queue.
+front()	       Returns the first element of the queue.
+back()	       Returns the last element of the queue.
+size()	       Returns the number of elements in the queue.
+empty()	   Returns true if the queue is empty.
+
+
+
+##### C++ Map
+
+- In C++, maps are associated containers that hold pairs of data.
+``` c++
+// create a map with integer keys and string values
+std::map<int, string> student = {{1,"Jacqueline"}, {2,"Blake"}, {3,"Denise"}};
+
+// adding elements
+map_name[key] = value;  // using the [] operator
+// using the insert() and make_pair() functions
+map_name.insert(std::make_pair(key, value));
+
+// declare map iterator
+map<int, string>::iterator iter;
+
+```
+
+- Operation	Description
+  insert()         adds an element (key-value pair) to the map
+  erase()	      removes an element or range of elements from the map
+  clear()	      removes all the elements from the map
+  find()	      searches the map for the given key
+  size()	      returns the number of elements in the map
+  empty()	      returns true if the map is empty.
+
+ 
+##### C++ Set
+
+- Sets are STL containers that store unique elements of the same type in a sorted manner. sets have unique elements , immutable , sorted and associative properties.
+- element traversal cannot be done by using indexes. traversal is done directly on keys.
+- Also, the unordered set is implemented as a hash table data structure whereas the regular set is implemented as a binary search tree data structure.
+- **multiset** allows set to have duplicate values. Erase function in this case deletes all instances of the key.
+
+- Operation	Description
+
+  insert()	       Insert elements into a set.
+  erase()	       Delete elements from a set.
+  clear()	       Remove all the elements from a set.
+  empty()	       Check if the set is empty. 
+  size()	       Returns the size of the set.
+  count()           returns number of instances of key
+
+``` c++
+set<data_type> set_name = {key1, key2, key3, ...};
+
+// stores in desc order
+set<int, greater<int>> my_set = {5, 3, 8, 1, 3};
+
+// add values to the set
+my_set.insert(10);
+
+// delete values from the set
+my_set.erase(10);
+```

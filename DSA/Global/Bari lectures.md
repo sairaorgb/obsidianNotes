@@ -1,0 +1,3 @@
+- Difference between an Algorithm and program is algorithm is made during designing phase and program is written during implementation. 
+- Priori analysis is done during an algorthimic study which consists of Time and space function whereas posteriori testing is done during program writing that contains study on run time and bytes used.
+- Time complexity is calculated as an order of the expression used to describe the number of calculations made with a reference one .. whereas space complexiity is the order of expression which is the space occupied by algorithm.

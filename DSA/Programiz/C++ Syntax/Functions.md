@@ -3,12 +3,12 @@ There are two types of function:
 **Standard Library Functions:** Predefined in C++ 
 **User-defined Function:** Created by users
 
-```c++
+``` c++
 returnType functionName (parameter1, parameter2,...) {
     // function body   
 } ```
 
-In C++, the code of function declaration should be before the function call. However, we can use the function prototype for a different approach .
+- In C++, the code of function declaration should be before the function call. However, we can use the function prototype for a different approach .
 
 ``` c++
 // function prototype
@@ -25,7 +25,7 @@ void add(int a, int b) {
 }
 ```
 
-During compile time , the entire code is broken into a syntax tree and then analyzed for various things .. one imp thing to note herer is that compiler needs a function definition or atleast a function prototype before a call is made for that.
+- During compile time , the entire code is broken into a syntax tree and then analyzed for various things .. one imp thing to note herer is that compiler needs a function definition or atleast a function prototype before a call is made for that.
 #### Function default parameters
 
 ``` c++
@@ -37,12 +37,12 @@ display();
 display('#');
 display('$',5);
 ```
-Once we provide a default value for a parameter, all subsequent parameters must also have default values.
-If we are defining the default arguments in the function definition instead of the function prototype, then the function must be defined before the function call.
+- Once we provide a default value for a parameter, all subsequent parameters must also have default values.
+- If we are defining the default arguments in the function definition instead of the function prototype, then the function must be defined before the function call.
 
 #### C++ function overloading
 
-In C++, two functions can have the same name if the number and/or type of arguments passed is different. 
+- In C++, two functions can have the same name if the number and/or type of arguments passed is different. 
 ``` c++
 // same name different arguments
 int test() { }
@@ -50,12 +50,12 @@ int test(int a) { }
 float test(double a) { }
 int test(int a, double b) { }
 ```
-return types might be same or different but the signature of args passed must be different.
+- return types might be same or different but the signature of args passed must be different.
 errors happen due to possible conflicts caused during compilation.
 
 #### C++ Inline function
 
-Each time an inline function is called, the compiler copies the code of the function to that call location. This optimizes the code a bit.
+- Each time an inline function is called, the compiler copies the code of the function to that call location. This optimizes the code a bit.
 
 ``` c++
 \\ before compilation
@@ -70,6 +70,7 @@ int main() {
     displayNum(666);
 
 \\ after compilation
+
 inline void displayNum(int num) {
     cout << num << endl;
 }

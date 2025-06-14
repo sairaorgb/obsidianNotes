@@ -26,7 +26,6 @@ int  test[2][3] = { {2, 4, 5}, {9, 0, 19}};
 returnType functionName(dataType arrayName[]) {
     // code
 }
-// arrayName will be initated with base pointer after call.
 
 // function call
 functionName(basepointer);
