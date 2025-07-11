@@ -61,6 +61,16 @@ In C++, we can use the Standard Template Library to implement some of the common
 -  For Sequential containers , an iterator can be added with an integer to get a valid element of that container . wherease in other containers , this does not work cause elements dont occupt consecutive locations and the iterator needs to be incremented with ++ to get next location. 
 - Unlike vectors or other containers, we cannot use a ranged for loop to iterate through a stack. This is because the STL stack is an STL Container Adapter, which provides restrictive access to make it behave like a standard stack data structure.
 
+- Most STL containers can be constructed from another using:
+``` c++
+TargetContainer(src.begin(), src.end());
+```
+Works for: vector, list, deque, set, unordered_set, multiset, etc.
+Doesn't work directly for: map, unordered_map, stack, queue, priority_queue.
+Used to copy/mutate contents between containers or remove duplicates (e.g., via set).
+
+-  == works for stl containers with time complexity as linear.
+
 
 ###### C++ STL Array
 
@@ -238,3 +248,12 @@ my_set.insert(10);
 // delete values from the set
 my_set.erase(10);
 ```
+
+
+
+
+#### C++ Algorithms
+
+1. **C++ sort**  
+	- sort function usually takes o(nlogn) for time complexity and O(1) or O(n) for space complexity based on the situation.
+2. 

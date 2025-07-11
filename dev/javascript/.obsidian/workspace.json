@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "0aaa3cac1357740b",
+    "id": "29b03749bc2d8576",
     "type": "split",
     "children": [
       {
-        "id": "78304e268f015675",
+        "id": "619fe36e1c3e6bce",
         "type": "tabs",
         "children": [
           {
-            "id": "25d7d828e1917371",
+            "id": "70c86d6fc51c7448",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programiz/C++ Syntax/C++ STL.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "C++ STL"
+              "title": "New tab"
             }
           }
         ]
@@ -27,20 +23,20 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7d17d66018f52d1f",
+    "id": "8130e56514ab0068",
     "type": "split",
     "children": [
       {
-        "id": "b5d72ac9bcba6351",
+        "id": "156f8f9b4126dbb6",
         "type": "tabs",
         "children": [
           {
-            "id": "880f46f33518468e",
+            "id": "400cbff574d4d8d0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "804acac4f8d23747",
+            "id": "0dbbf15244232b98",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "f58e11cddfc51253",
+            "id": "324a846e96ddc090",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "51298bb53247f620",
+    "id": "ed86aab2813d156a",
     "type": "split",
     "children": [
       {
-        "id": "76a4078d5ae76c41",
+        "id": "045bd957907df95f",
         "type": "tabs",
         "children": [
           {
-            "id": "8e64071a83fb78af",
+            "id": "5d94151e4fb0653e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,46 +99,49 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DSA"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "0991b51a73e63db5",
+            "id": "cd6ddfcda9d31ff7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from DSA"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "342136d98a2cbb62",
+            "id": "7d955399630548e9",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "530fc313bb5bf6eb",
+            "id": "400669cb0d259fbe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DSA"
+              "title": "Outline"
             }
           }
         ]
@@ -163,44 +161,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25d7d828e1917371",
+  "active": "70c86d6fc51c7448",
   "lastOpenFiles": [
-    "Programiz/C++ Syntax/OOPs Paradigm in CPP.md",
-    "Programiz/C++ Syntax/C++ STL.md",
-    "Programiz/C++ Syntax/Flow Control.md",
-    "Programiz/C++ Syntax/Fundamentals.md",
-    "Sakamoto Days.md",
-    "Global/Bari lectures.md",
-    "Global/DSA.md",
-    "Programiz/Data Structures/DSA Introduction.md",
-    "Programiz/C++ Syntax/Structures and Enumerations.md",
-    "Programiz/C++ Syntax/Pointers and References.md",
-    "Programiz/C++ Syntax/Arrays and Strings.md",
-    "Programiz/C++ Syntax/Functions.md",
-    "Untitled.canvas",
-    "2025-06-12.md",
-    "Global/Images/Pasted image 20250520142024.png",
-    "Global/Images/Pasted image 20250528105927.png",
-    "Global/Images/Pasted image 20250526130154.png",
-    "Programiz/Basic Syntax.md",
-    "Global/Images",
-    "Global",
-    "Global/Images/Pasted image 20250523133203.png",
-    "Global/Images/Pasted image 20250523133153.png",
-    "Global/Images/Pasted image 20250523123241.png",
-    "Global/Images/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf",
-    "Untitled 1.md",
-    "STL.md",
-    "Sorting.md",
-    "Sets.md",
-    "Programiz.md",
-    "Pasted image 20250520142749.png",
-    "C++ Syntax/Basic Syntax.md",
-    "C++ Syntax/miscellaneous.md",
-    "C++ Syntax",
-    "2025-03-25.md",
-    "Programiz",
-    "tumblr_ce237ad7762fc6bce812f5f47f499d76_7acfce39_1280.webp",
-    "image.webp"
+    "Welcome.md"
   ]
 }

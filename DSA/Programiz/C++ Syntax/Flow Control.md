@@ -1,6 +1,6 @@
 #### C++ relational operators
-A relational operator is used to check the relationship between two operands.
-Examples include == , != , > , < , >= , <=
+- A relational operator is used to check the relationship between two operands. Examples include == , != , > , < , >= , <=
+- Expression a = b = c; uses right-to-left associativity of the assignment operator (=). b=c gets evaulated first and then the assigned b value i.e c is assigned to a. 
 
 #### C++ logical operators
 We use logical operators to check whether an expression is **true** or **false**.
