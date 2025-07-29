@@ -89,7 +89,7 @@ The `typeof` operator allows us to see which type is stored in a variable.
 - `prompt` shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, `null`.
 - `confirm`  shows a message and waits for the user to press “OK” or “Cancel”. It returns `true` for OK and `false` for Cancel/Esc.
 
-Values captured by these are strings. Be cautious about directly using them in other operations. 
+Values captured by `prompt` is strings and `confirm` is boolean . Be cautious about directly using them in other operations. 
 we consider return value of alert to be undefined. 
 
 #### Basic operators
@@ -248,3 +248,41 @@ height ?? 100; // return 0
 #### Loops 
 
  - break/continue support labels before the loop. A label is the only way for break/continue to escape a nested loop to go to an outer one.
+
+#### Functions
+
+- if a functional call miss arguments , then the subsequent parameters are given `undefined` value. 
+- function is with empty return call or no return call .. returns undefined. 
+
+- **Functional Expressions** is a function may be created and immediately called or scheduled for a later execution, not stored anywhere, thus remaining anonymous.
+- functional declarations that were made at global level are available throughout the code since the compilation phase makes note of them. whereas functional expressions are only run in runtime and available in later parts of code. 
+- Function declarations are only available in their code block scope (let's say parenthesis). whereas variables storing fn exp are available for later use .
+
+``` js 
+let sayHi = function() {
+  alert( "Hello" );
+};
+
+alert( sayHi ); // shows the function code
+
+```
+
+- **Callback functions** -  The idea is that we pass a function and expect it to be “called back” later if necessary.
+``` js 
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+```
+
+- **Arrow or Lambda functions** - Another way of writing functional expressions. 
+``` js 
+fnval = (...args) => { body }
+```
+
