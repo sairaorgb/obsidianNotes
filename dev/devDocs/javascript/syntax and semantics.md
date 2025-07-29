@@ -1,9 +1,12 @@
+
+## Functions
+
 - Unlike C, where functions are static blocks of code, in JS they behave more like **objects with executable behavior**.
 - functions are **first-class objects**—they can be stored in variables, passed around, and have properties.
 -  prototype defines properties and methods that should be shared across all instances created by that object.
-## JS Functions vs Constructor Functions
+#### JS Functions vs Constructor Functions
 
-#### 🔹 Regular Functions
+##### 🔹 Regular Functions
 
 - Used for logic, returning values.
 - Not used with `new`.
@@ -12,7 +15,7 @@ function add(a, b) {
 	return a + b; 
 } 
 ```
-#### 🔹 Constructor Functions
+##### 🔹 Constructor Functions
 
 - Used with `new` to create objects.
 - Can define shared methods via `.prototype`.
@@ -20,7 +23,7 @@ function add(a, b) {
 function Car(model) {   
 	this.model = model; 
 	this.greet = function(){
-		return `this car is of ${model}`;		
+		return `this car is of ${this.model}`;		
 	}
 } 
 const c = new Car("Tesla"); 
@@ -34,7 +37,7 @@ const c = new Car("Tesla");
 
 -  `this` refers to the object being created.
 - Use it to define instance properties and methods.
-- methods written inside function are copied over to all the objects, but if we Use `.prototype.methodName` to define the methods the unwanted copy can be crossed. 
+- methods written inside function are copied over to all the objects, but if we Use `.prototype.methodName` to define the methods the unwanted copy can be reduced. 
 
 ``` js
 function Animal() {
@@ -80,3 +83,4 @@ console.log(dog1.bark());  // Woof!
 
 - After the prototype of animal is assigned to dog , Dog will lose its constructor since its practically the prototype of animal . so the constructor part needs to be rewritten;
 - prototype.constructor points to the function that created an object's prototype.
+- 
