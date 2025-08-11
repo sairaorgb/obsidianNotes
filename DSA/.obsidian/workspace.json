@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programiz/C++ Syntax/C++ STL.md",
+                "file": "Programiz/C++ Syntax/Arrays and Strings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C++ STL"
+              "title": "Arrays and Strings"
             }
           }
         ]
@@ -163,8 +163,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "880f46f33518468e",
+  "active": "25d7d828e1917371",
   "lastOpenFiles": [
+    "Programiz/C++ Syntax/C++ STL.md",
     "Programiz/C++ Syntax 1/Structures and Enumerations.md",
     "Programiz/C++ Syntax 1/Pointers and References.md",
     "Programiz/C++ Syntax 1/OOPs Paradigm in CPP.md",
@@ -175,7 +176,6 @@
     "Programiz/C++ Syntax 1/Arrays and Strings.md",
     "Programiz/C++ Syntax 1",
     "Sakamoto Days.md",
-    "Programiz/C++ Syntax/C++ STL.md",
     "Programiz/C++ Syntax/OOPs Paradigm in CPP.md",
     "Programiz/C++ Syntax/Flow Control.md",
     "Programiz/C++ Syntax/Fundamentals.md",

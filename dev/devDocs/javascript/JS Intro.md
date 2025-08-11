@@ -25,7 +25,7 @@ alert("Hello")
 
 #### The modern mode, "use strict"
 
-- Some stuff in older versions of js is deprecated, A special directive `use strict` is used at the top of script to let env know that this script used modern stuff.
+- Some stuff in older versions of js is deprecated, A special directive `use strict` is used at the top of script to let env know that this script use modern stuff.
 - it is enabled by default in modern js. 
 
 #### Variables
@@ -285,4 +285,3 @@ ask(
 ``` js 
 fnval = (...args) => { body }
 ```
-
