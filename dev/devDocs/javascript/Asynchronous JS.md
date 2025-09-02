@@ -25,8 +25,9 @@ doStep1(res1 => {
 	doStep2(res2 => {     
 		doStep3(res3 => 
 			console.log("Done!")); 
-			  }); 
-			  });
+		}); 
+	});
+});
  ```
 
 ### 2. Promises
@@ -84,55 +85,34 @@ async function getData() {
 ## Definition
 
 - A **callback** is a function **passed as an argument** to another function and executed later, often after an async operation completes.
-    
 - Key idea: pass **function reference**, not the result of execution.
-    
-
----
-
 ## Syntax
 
-`function greet(name, callback) {   console.log("Hello " + name);   callback(); } greet("Sairaorg", () => console.log("Bye!"));`
+``` js
+function greet(name, callback){
+	console.log("Hello " + name);   
+	callback(); 
+} 
+greet("Sairaorg", () => console.log("Bye!"));`
+setTimeout(() => greet("Sairaorg"), 1000);
+or use `.bind`: `setTimeout(greet.bind(null, "Sairaorg"), 1000)
+```
 
-- **No parentheses** when passing → passes reference.
-    
-- To pass arguments: wrap in another function
-    
-    `setTimeout(() => greet("Sairaorg"), 1000);`
-    
-    or use `.bind`: `setTimeout(greet.bind(null, "Sairaorg"), 1000)`.
-    
 
----
 
 ## Async Usage
 
 - JS hands the callback to **Web APIs** (e.g. `setTimeout`, `fetch`).
-    
 - After task completion → callback placed in **task queue** → **event loop** pushes it to call stack when free.
-    
-
----
-
 ## Patterns
 
 - **Continuation style**: subsequent work runs _inside_ the callback.
-    
 - **Error-first callbacks (Node.js)**: `(err, result) => { ... }`.
-    
-
----
 
 ## Pitfalls
 
 - **Callback Hell**: deep nesting for dependent async tasks.
-    
 - Harder error handling and sequencing.
-    
 - Motivated the creation of **Promises** and **async/await**.
-    
 
----
-
-That’s your callback pocket-note.
 
