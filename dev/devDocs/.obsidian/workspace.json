@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b84492d0eb7ee30",
+        "id": "e2e84737e9072c42",
         "type": "tabs",
         "children": [
           {
-            "id": "a577c4436794d99e",
+            "id": "13541ad93975b96c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "2. Functions"
             }
+          },
+          {
+            "id": "319b30194cc2d411",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "javascript/Asynchronous JS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Asynchronous JS"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5bc18ec3bb4e9fd7",
@@ -167,22 +183,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a577c4436794d99e",
+  "active": "319b30194cc2d411",
   "lastOpenFiles": [
+    "javascript/2. Functions.md",
+    "javascript/Functions.md",
+    "javascript/Asynchronous JS.md",
+    "Backend/Node.md",
+    "Git/GIT.md",
+    "Git/Git & Github.md",
+    "Backend/Backend.md",
+    "Backend",
     "Backend/HTTP.md",
     "Backend/Internet.md",
-    "javascript/2. Functions.md",
     "javascript/4. OOPs.md",
     "javascript/5.BOM and DOM.md",
     "javascript/Miscallaneous.md",
-    "javascript/Functions.md",
-    "javascript/Asynchronous JS.md",
     "Untitled.md",
     "DSA/Binary search.md",
     "javascript/1. JS Intro.md",
     "DSA",
-    "Git/Git & Github.md",
-    "Git/GIT.md",
     "Git",
     "javascript/Data types.md",
     "C++ Syntax/Untitled.md",
@@ -204,11 +223,8 @@
     "C++ Syntax/Structures and Enumerations.md",
     "C++ Syntax/Pointers and References.md",
     "C++ Syntax/OOPs Paradigm in CPP.md",
-    "C++ Syntax/Fundamentals.md",
-    "C++ Syntax/Functions.md",
     "C++ Syntax",
     "Dart",
-    "javascript",
     "Untitled.canvas"
   ]
 }

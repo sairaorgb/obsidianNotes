@@ -1,3 +1,8 @@
+- **Version Control System (VCS):** Tracks and manages changes in code.
+- **Distributed:** Every developer has the full repo (not just files, but complete history).
+- **Snapshots, not diffs:** Each commit is a snapshot of the whole project; unchanged files are just references.
+- **Content-addressable storage:** Every object (file, commit, tree) has a unique SHA-1 hash → integrity guaranteed.
+
 - A `Remote Repo` is a version of your project hosted on the internet.
 - GIT config can be changed at local (current repo) , global ( current user ) 
   and system (all user level). 
