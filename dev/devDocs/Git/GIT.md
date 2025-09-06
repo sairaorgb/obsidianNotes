@@ -1,10 +1,4 @@
 
-## What Git Is
-
-- **Version Control System (VCS):** Tracks and manages changes in code.
-- **Distributed:** Every developer has the full repo (not just files, but complete history).
-- **Snapshots, not diffs:** Each commit is a snapshot of the whole project; unchanged files are just references.
-- **Content-addressable storage:** Every object (file, commit, tree) has a unique SHA-1 hash → integrity guaranteed.
 
 ## Repositories
 
