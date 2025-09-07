@@ -48,9 +48,10 @@ function greet(name, callback){
 	console.log("Hello " + name);   
 	callback(); 
 } 
-
 greet("Sairaorg", () => console.log("Bye!"));
-setTimeout(() => greet("Sairaorg"), 1000);
+
+[1, 2, 3].forEach(num => console.log(num));   // synchronous callback
+setTimeout(() => greet("Sairaorg"), 1000);    // asynchronous callback
 or use `.bind`: setTimeout(greet.bind(null, "Sairaorg"), 1000)
 
 doStep1(res1 => {
@@ -61,11 +62,30 @@ doStep1(res1 => {
 	});
 });
 ```
+**Error first callbacks in Node js**
+```js 
+function readFileFake(filename, callback) {
+  if (filename !== "exists.txt") {
+    callback(new Error("File not found"), null);
+  } else {
+    callback(null, "file contents here");
+  }
+}
+
+readFileFake("exists.txt", (err, data) => {
+  if (err) {
+    console.error("Error:", err);
+  } else {
+    console.log("Data:", data);
+  }
+});
+```
 ### 2. Promises
 
 - Object representing a value that may be available now, later, or never.
 - States: **pending → fulfilled/rejected**.
-- Promise takes executor function as argument with resolve,reject callbacks which return a value that is taken as argument for then,catch handlers.
+- Promise takes executor function as argument with resolve,reject callbacks as function args  which return a value that is taken as argument for then,catch handlers.
+- result of a promise is a package of `state of promise` and `return value from resolve/reject`.
 
 1. **creating promise**
 ``` js
@@ -102,9 +122,11 @@ p.then(val => val * 2)
  
  4. **static helpers**
  ``` js
+// utility methods
 Promise.resolve(42);      // immediately fulfilled
 Promise.reject("fail");   // immediately rejected
 
+// static methods
 Promise.all([p1, p2]);    // waits for ALL, rejects if any fail
 Promise.race([p1, p2]);   // settles with first to finish
 Promise.allSettled([p1]); // waits for ALL, returns results {status,value|reason}
@@ -122,10 +144,26 @@ try {
 }
 ```
 
+- util.promisfy can be used to render callback based fns into promises
+
+``` js
+// promise inside then is resolved and passed down
+Promise.resolve(5)
+  .then(val => {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(val * 2), 1000);
+    });
+  })
+  .then(next => {
+    console.log(next); // 10 (after 1s)
+  });
+```
 ### 3. Async / Await
 
-- Syntactic sugar over promises. 
-- `await` pauses inside async function until promise resolves/rejects.
+- async = wraps return in a promise ( promise creation )
+- await = unwraps a promise’s value (or throws its error). ( promise consumption ) 
+- `await` pauses until promise resolves/rejects. 
+- since async functions technically return promises, then catch handlers can be attached to execute them instead of await.
 
 ``` js
 async function getData() {   
@@ -137,9 +175,25 @@ async function getData() {
 		console.error(err);   
 	} 
 } 
+
+async function foo() {
+  return 42;            // rendered to promise.resolve(42)
+}
+
 ```
 
+- Try-catch blocks 
+``` js
+async function baz() {
+  try {
+    const data = await fetch("bad-url");
+    console.log(data);
+  } catch (err) {
+    console.error("caught:", err);
+  }
+}
 
+```
 
 
 
