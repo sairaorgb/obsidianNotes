@@ -34,10 +34,9 @@ server.listen(PORT, 'localhost', () => {
 });
 ```
 
+
+-  `res.writeHead` method is used to set status codes and response headers and `res.end` is used for writing body of response.
 ###### HTTP Headers
- 
- `res.writeHead` method is used to set status codes and response headers.
- `req.headers` can be used to get headers in req object.
  
  Response Headers :
 -  `Content-Type`: Specifies the media type of the content (e.g., text/html, application/json)
@@ -58,13 +57,4 @@ Status Codes:
 - 500	Internal Server Error
 
 
-
-#### Classes & Objects
-
-- http.IncomingMessage - for both res and req server recieves
-  - properties: req.url , req.method , req.headers
-- http.ServerResponse - for res you send from server
-  - res.writeHead
-  - res.write
-  - res.end
 
