@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/0. Express.md",
+                "file": "javascript/NodeJs/2. Modules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0. Express"
+              "title": "2. Modules"
+            }
+          },
+          {
+            "id": "0517bd4218c7cb4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "javascript/NodeJs/3. Express.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Express"
             }
           }
         ]
@@ -170,11 +184,14 @@
   },
   "active": "5a9ee32527c8eb4d",
   "lastOpenFiles": [
+    "javascript/NodeJs/4. RESTful APIs.md",
+    "javascript/NodeJs/3. Express.md",
+    "C++ Syntax/Structures and Enumerations.md",
+    "C++ Syntax/Untitled.md",
     "javascript/NodeJs/Core Modules/HTTP.md",
-    "javascript/0. Express.md",
     "javascript/NodeJs/Core Modules/URL.md",
-    "javascript/NodeJs/1. Internals.md",
     "javascript/NodeJs/2. Modules.md",
+    "javascript/NodeJs/1. Internals.md",
     "Backend/Backend.md",
     "Backend/Modules.md",
     "javascript/NodeJs/Core Modules",
@@ -197,10 +214,8 @@
     "DSA",
     "Git",
     "javascript/Data types.md",
-    "C++ Syntax/Untitled.md",
     "Frontend/HTML/Tags.md",
     "Frontend/HTML",
-    "Frontend/Untitled.md",
     "Frontend",
     "Backend/HTTP",
     "Backend",
@@ -209,7 +224,6 @@
     "global/Pasted image 20250811202045.png",
     "global/Pasted image 20250811202034.png",
     "global/Pasted image 20250811201944.png",
-    "javascript/General Syntax.md",
     "Untitled.canvas"
   ]
 }
