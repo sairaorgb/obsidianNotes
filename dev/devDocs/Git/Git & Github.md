@@ -6,6 +6,17 @@
 - A `Remote Repo` is a version of your project hosted on the internet.
 - GIT config can be changed at local (current repo) , global ( current user ) 
   and system (all user level). 
+
+- Repo = Working directory + `.git/` folder (history & metadata).
+- Start points:
+    - `git init` → create a brand-new repo (empty history).
+    - `git clone <url>` → copy an existing repo (with full history).
+
+_Repo anatomy:
+- **Working Directory** → actual project files.
+- **Staging Area (Index)** → prep zone before committing.
+- **.git directory** → stores snapshots, branches, configs.
+
 ``` bash
 # staging files 
 git add <file>
@@ -169,6 +180,8 @@ git branch rescue <dangling-commit>   # recovers dangling commits
 	- commited  changes -> commits are saved in curr branch and switch happens.
 
 - commits are a DAG (directed acyclic graph) , git checks for reachability (ancestry) of target branch head from current branch head before deleting(-d) or merging target branch.
+
+**Merging** 
 - Fast forward  happens if main's tip is behind target's tip , git can just move pointer forward.
 - when branches are diverged , a new merge commit is added that has two parents as both branch heads.
 - If there are confilcts, git marker appear in code that needs to be manually resolved and added commited. custom stratagies like ours ( ignores other br changes ), theirs ( ignores current branch changes ) , resolve exsist.
@@ -185,7 +198,8 @@ git merge --squash      # combine all branch commits into one
 git merge --abort       # revert to pre-merge state while resolving conflicts.
 ```
 
-- `rebase` is a similar mechansim to merge. But it finds the common ancestor between branches and refactors sub branch commits into newer ones and attaches them.
+- `rebase` is a similar mechansim to merge. But it finds the common ancestor between current branch and target branch , and refactors current branch commits after parent into new commits and places them after the targer branch head. 
+- rebase only changes current branch. so it should be merged again into target branch which can be done through fast forward owing to above logic.
 - commit hashes get lost during this process so rebasing should be done only at local level but not at remote where those commits could be shared.
 - conflicts caused are resolved manually and commited again.
 
@@ -233,9 +247,18 @@ git push <remote> <branch>
 git push <remote> :<remote branch>
 git push <remote> --delete <remote branch>
 
-# force push after a rebase
-git push --force origin feature-branch
 ```
+- git push usually happens only if out local branch can be merged into remote through fast forward . In the case of divergent branches you are supposed to git pull first and then push.
+- git push --force-with-lease pushes commits overwriting any conflicting commits on the remote branch, but only if the remote branch has not been updated since the last time you pulled from it. ( protects others work )
+```bash
+# force push after a rebase (not recommended)
+git push --force origin feature-branch
+# force pushed but checks if remote tracking branch is updated.
+git push --force-with-lease origin feature-branch
+```
+
+- caution need to be exercies while rebasing remote branch commits while merging during pr's.
+- If the feat branches are rebased and merged into main , whosoever using old commits will have divergent branches with same commits may having different hashes.
 
 - git remote branch management
 ``` bash
@@ -258,8 +281,8 @@ git remote set-url origin git@github.com:user/repo.git
 git fetch upstream
 git rebase upstream/main
 git push origin main
-
 ``` 
+- 
 
 #### forks 
 
