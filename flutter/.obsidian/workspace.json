@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "6eca5ef3cadd81a1",
+    "id": "7c7c37e5a01e5180",
     "type": "split",
     "children": [
       {
-        "id": "869518ed57cf6216",
+        "id": "01a5edc22a6e9288",
         "type": "tabs",
         "children": [
           {
-            "id": "b3d9fe350025bf9d",
+            "id": "c274b07691036a50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter/Miscallaneous.md",
+                "file": "Dart/2. Operators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Miscallaneous"
+              "title": "2. Operators"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d4acaf662cea0c5c",
+    "id": "eca518ec4074231c",
     "type": "split",
     "children": [
       {
-        "id": "013fb99c9c183d38",
+        "id": "bb46f68ed3b8b7d2",
         "type": "tabs",
         "children": [
           {
-            "id": "04caab2f85604a63",
+            "id": "91dd577101e4b6a0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "986d7421b22bbd9f",
+            "id": "6e2c010c12fda7ff",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "5e3da148113909b5",
+            "id": "5812c23fed7b3c8e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "5bc18ec3bb4e9fd7",
+    "id": "c4861dc3b43f184b",
     "type": "split",
     "children": [
       {
-        "id": "6b2383f42c1eab96",
+        "id": "459c5834f59ca4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "c2a2094b3b7906e2",
+            "id": "4242481226563fb5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/1. JS Intro.md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,24 +105,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1. JS Intro"
+              "title": "Backlinks for Welcome"
             }
           },
           {
-            "id": "86b5c8d6fb879db8",
+            "id": "5c7d1242475c4fb5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Welcome"
             }
           },
           {
-            "id": "620106a336d9a83e",
+            "id": "0dcffd1a62081791",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,79 +138,46 @@
             }
           },
           {
-            "id": "30374b473629449a",
+            "id": "26a45fe756ab79b3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Welcome.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Welcome"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "b3d9fe350025bf9d",
+  "active": "c274b07691036a50",
   "lastOpenFiles": [
-    "Flutter/Internals.md",
-    "Flutter/Miscallaneous.md",
-    "Dart/1.Variables.md",
-    "tasks/ToDos.md",
-    "tasks",
-    "javascript/1. JS Intro.md",
-    "javascript/NodeJs/2. Modules.md",
-    "javascript/NodeJs/misc.md",
-    "javascript/NodeJs/4. RESTful APIs.md",
-    "javascript/NodeJs/3. Express.md",
-    "javascript/Miscallaneous.md",
-    "javascript/Functions.md",
-    "javascript/Asynchronous JS.md",
-    "javascript/5.BOM and DOM.md",
-    "javascript/4. OOPs.md",
-    "javascript/2. Functions.md",
-    "javascript/NodeJs/1. Internals.md",
-    "javascript/NodeJs/Core Modules/HTTP.md",
-    "Git/Git & Github.md",
-    "Git/GIT.md",
-    "C++ Syntax/Structures and Enumerations.md",
-    "C++ Syntax/Untitled.md",
-    "javascript/NodeJs/Core Modules/URL.md",
-    "Backend/Backend.md",
-    "Backend/Modules.md",
-    "javascript/NodeJs/Core Modules",
-    "javascript/Node.md",
-    "javascript/NodeJs",
-    "Backend",
-    "Backend/HTTP.md",
-    "DSA",
-    "Git",
-    "Frontend/HTML",
-    "Frontend",
-    "Backend/HTTP",
-    "Backend",
-    "global/Pasted image 20250811202101.png",
-    "global/Pasted image 20250811202045.png",
-    "global/Pasted image 20250811202034.png",
-    "global/Pasted image 20250811201944.png",
-    "Untitled.canvas"
+    "Dart/1. Variables.md",
+    "Dart/2. Operators.md",
+    "Dart/Untitled",
+    "Untitled.md",
+    "create a link.md",
+    "Dart",
+    "Welcome.md"
   ]
 }
