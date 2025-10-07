@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c4861dc3b43f184b",
@@ -170,13 +171,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "6e2c010c12fda7ff",
+  "active": "574997ac3de46f7a",
   "lastOpenFiles": [
-    "Dart/2. Operators.md",
+    "Untitled.md",
     "Dart/3. Types.md",
+    "Dart/2. Operators.md",
     "Dart/1. Variables.md",
     "Dart/Untitled",
-    "Untitled.md",
     "create a link.md",
     "Dart",
     "Welcome.md"
