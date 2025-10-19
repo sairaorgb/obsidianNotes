@@ -1,0 +1,59 @@
+
+- A `Widget` is just a configuration describing how flutter should render UI , but the widget itself doesn't paint. Flutter then builds a render tree from these descriptions.
+- `Stateless` widgets are when ur UI depends on fixed data whereas `Stateful` widgets are when something changes.
+- Both widgets are immutable in terms of fields. when data changes flutter doesn't modify the widgets it rather creates a new one and repaints the changed stuff. So, `State` object in case of stateful objects persist between rebuilds.
+
+- render , widget , element tree.
+
+**Stateless widget**
+``` dart
+class GreetingCard extends StatelessWidget {
+  final String name;
+
+  const GreetingCard({super.key, required this.name});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text('Hello, $name!');
+  }
+}
+```
+
+- GreetingCard object itself , once created it cannot change . If a different argument is passed a new widget objected is created. Optimization only happens at rendering.
+
+
+**Stateful widget**
+``` dart
+class GreetingCard extends StatefulWidget {
+  const GreetingCard({super.key});
+
+  @override
+  State<GreetingCard> createState() => _GreetingCardState();
+}
+
+class _GreetingCardState extends State<GreetingCard> {
+  String name = 'John';
+
+  void changeName() {
+    setState(() {
+      name = 'Mary';
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('Hello, $name!'),
+        ElevatedButton(
+          onPressed: changeName,
+          child: const Text('Change Name'),
+        ),
+      ],
+    );
+  }
+}
+```
+
+- GreetingCard  widget is still immuable, its created only once.   whereas \_GreetingCardState object is mutable which constitutes as State. 
+- when rebuilds happen , setState() updates name -> flutter re-runs build() on same State object -> widget description is recreated but internal memory (name) remains. 
