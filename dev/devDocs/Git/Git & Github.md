@@ -198,7 +198,7 @@ git merge --squash      # combine all branch commits into one
 git merge --abort       # revert to pre-merge state while resolving conflicts.
 ```
 
-- `rebase` is a similar mechansim to merge. But it finds the common ancestor between current branch and target branch , and refactors current branch commits after parent into new commits and places them after the targer branch head. 
+- `rebase` is a similar mechansim to merge. But it finds the common ancestor between current branch and target branch , and refactors current branch commits after parent into new commits and places them after the target branch head. 
 - rebase only changes current branch. so it should be merged again into target branch which can be done through fast forward owing to above logic.
 - commit hashes get lost during this process so rebasing should be done only at local level but not at remote where those commits could be shared.
 - conflicts caused are resolved manually and commited again.

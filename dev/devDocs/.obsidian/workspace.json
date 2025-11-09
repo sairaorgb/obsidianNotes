@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter/Miscallaneous.md",
+                "file": "Git/Git & Github.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Miscallaneous"
+              "title": "Git & Github"
             }
           }
         ]
@@ -169,8 +169,8 @@
   },
   "active": "b3d9fe350025bf9d",
   "lastOpenFiles": [
-    "Flutter/Internals.md",
     "Flutter/Miscallaneous.md",
+    "Flutter/Internals.md",
     "Dart/1.Variables.md",
     "tasks/ToDos.md",
     "tasks",
