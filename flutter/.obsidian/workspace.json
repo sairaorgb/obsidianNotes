@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "960784ad0613b13e",
+        "id": "e161353272fc6f58",
         "type": "tabs",
         "children": [
           {
-            "id": "69187a3d085ddf4b",
+            "id": "062c6578519d61c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Context.md",
+                "file": "Provider.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context"
+              "title": "Provider"
+            }
+          },
+          {
+            "id": "5379fffc8738738e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inherited widget.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Inherited widget"
             }
           }
         ]
@@ -95,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "Provider.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Provider"
             }
           },
           {
@@ -170,22 +184,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "69187a3d085ddf4b",
+  "active": "062c6578519d61c2",
   "lastOpenFiles": [
-    "Context.md",
-    "Flutter/Widgets/1. stateless and Stateful widgets.md",
-    "Flutter/Widgets/2. Builder.md",
-    "Flutter/Widgets/3. Stack.md",
-    "Flutter/Internals.md",
-    "Flutter/Widgets/8. Misc Widgets.md",
-    "Flutter/Miscallaneous.md",
-    "Dart/1. Variables.md",
-    "Untitled.base",
-    "Dart/5. Functions.md",
-    "Dart/3. Types.md",
-    "Dart/4. Classes & objects.md",
-    "Dart/2. Operators.md",
+    "Inherited widget.md",
+    "Provider.md",
+    "Untitled",
     "Dart/Misc.md",
+    "Dart/5. Functions.md",
+    "Dart/4. Classes & objects.md",
+    "Dart/3. Types.md",
+    "Dart/2. Operators.md",
+    "Dart/1. Variables.md",
+    "Context.md",
+    "Flutter/Widgets/8. Misc Widgets.md",
+    "Flutter/Widgets/3. Stack.md",
+    "Flutter/Widgets/2. Builder.md",
+    "Flutter/Widgets/1. stateless and Stateful widgets.md",
+    "Flutter/Internals.md",
+    "Flutter/Miscallaneous.md",
+    "Untitled.base",
     "Flutter",
     "Dart/Untitled",
     "create a link.md",
