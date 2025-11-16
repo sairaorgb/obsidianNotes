@@ -1,4 +1,4 @@
-- An Inherited Widget is : a specialized widget that stores data and notifies descendants when that data changes, enabling efficient state propagation through the widget tree. 
+- An Inherited Widget is : a specialized widget that stores data and notifies subscribed descendants when that data changes, enabling efficient state propagation through the widget tree. 
 - Inherited widget element store the dependencies and notifies resp descendants about changes.
 
 #### Mechanism
@@ -37,5 +37,6 @@ print(config?.themeColor);
 
 - `context` is used in traversing the widget tree.
 -  static method inside inherited widget returns the object of inherited class.
+- element of inherited widget stores the info about widgets that registered a dependency.
 
 
