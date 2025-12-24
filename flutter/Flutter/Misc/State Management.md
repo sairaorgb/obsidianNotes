@@ -1,4 +1,4 @@
-## Provider
+f## Provider
 
 - Does the `dependency injection` job of passing data directly to widget rather than propagating through parents all the way. Based on [[Inherited widget]].
 - Provider handles updateShouldNotify, dependency tracking, and context lookups automatically.
@@ -151,3 +151,34 @@ final model = Provider.of<Counter>(context); // listen = true
 final model = Provider.of<Counter>(context, listen: false); // no rebuild
 ```
 
+
+### Exyras
+
+- `watch` **cannot** be used:
+    
+    - in constructor
+        
+    - in `initState`
+        
+    - in fields initialized before build
+        
+- `watch` **can** be used:
+    
+    - in `build()`
+        
+    - in methods that are _called from_ `build()`
+        
+    - in builder callbacks (`Builder`, `Consumer`, `ConsumerWidget`, etc.)
+        
+- Multiple `watch` calls to the same provider:
+    
+    - → all get the same instance/value
+        
+    - → only one rebuild per change
+        
+    - → just multiple reads, not multiple listeners in a problematic sense
+        
+
+Think of `watch` as:
+
+> “Register this widget as a listener, and give me the current value **right now** during this build.”
